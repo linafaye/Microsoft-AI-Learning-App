@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom app colors
+				brand: {
+					purple: '#8B5CF6',
+					'deep-purple': '#6E59A5',
+					blue: '#0EA5E9',
+					'soft-white': '#F1F0FB',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'confetti-slow': {
+					'0%': { transform: 'translate3d(0, 0, 0) rotateX(0) rotateY(0)' },
+					'100%': { transform: 'translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg)' }
+				},
+				'confetti-medium': {
+					'0%': { transform: 'translate3d(0, 0, 0) rotateX(0) rotateY(0)' },
+					'100%': { transform: 'translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg)' }
+				},
+				'confetti-fast': {
+					'0%': { transform: 'translate3d(0, 0, 0) rotateX(0) rotateY(0)' },
+					'100%': { transform: 'translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'confetti-slow': 'confetti-slow 3s ease-in-out infinite',
+				'confetti-medium': 'confetti-medium 2s ease-in-out infinite',
+				'confetti-fast': 'confetti-fast 1s ease-in-out infinite'
 			}
 		}
 	},
