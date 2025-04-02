@@ -1,17 +1,20 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import CourseList from './CourseList';
 import LearningQueue from './LearningQueue';
 import ProgressStats from './ProgressStats';
 import Navbar from './Navbar';
+import BottomNav from './BottomNav';
+import GamificationStatus from './GamificationStatus';
 import { Button } from '@/components/ui/button';
 import { Award, BookOpen, List } from 'lucide-react';
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-background pb-16">
+    <div className="min-h-screen bg-background pb-20">
       <Navbar />
+      <GamificationStatus />
       
       <div className="container px-4 py-6 max-w-6xl">
         <h1 className="text-3xl font-bold text-brand-purple mb-6">Welcome back!</h1>
@@ -61,6 +64,8 @@ const Dashboard = () => {
           </Tabs>
         </div>
       </div>
+      
+      <BottomNav />
     </div>
   );
 };

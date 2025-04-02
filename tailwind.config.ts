@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom app colors
+				// Custom app colors - Microsoft Learn inspired
 				brand: {
-					purple: '#8B5CF6',
-					'deep-purple': '#6E59A5',
-					blue: '#0EA5E9',
-					'soft-white': '#F1F0FB',
+					purple: '#5C2D91',
+					'deep-purple': '#4B2A77',
+					blue: '#0078D4',
+					'light-blue': '#50E6FF',
+					'soft-white': '#F8F9FA',
 				}
 			},
 			borderRadius: {
